@@ -17,3 +17,9 @@ CREATE TABLE users (
         ON UPDATE CASCADE
         ON DELETE SET NULL
 );
+
+CREATE TABLE roles (
+    role_id INT AUTO_INCREMENT PRIMARY KEY,
+    role_name VARCHAR(100) NOT NULL UNIQUE
+);
+
